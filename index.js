@@ -38,6 +38,7 @@ const screen = async ({ title, datestring }) => {
   //   console.log(element, 'element');
   const screen = await element.screenshot({ type: 'png' });
   //   const screen = await page.screenshot();
+  await browser.close();
 
   return screen;
 };
