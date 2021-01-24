@@ -44,7 +44,6 @@ const screen = async ({ title, datestring }) => {
 
 // Declare a route
 fastify.get('/', async (request, reply) => {
-  console.log(request.query.title, request.query.datestring, 'MA PORCO GIUDA');
   return reply
     .headers({
       'Content-Type': 'image/png',
